@@ -1,0 +1,8 @@
+node_modules/
+dist/
+server-data/
+.DS_Store
+.claude/
+*.zip
+# reference screenshots are third-party game images; keep them local
+reference/

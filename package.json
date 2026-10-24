@@ -1,0 +1,27 @@
+{
+  "name": "shaftcraft",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "ShaftCraft - a multiplayer voxel sandbox for the browser",
+  "scripts": {
+    "dev": "concurrently -k --handle-input --default-input-target server -n server,client -c yellow,cyan \"node server/index.js\" \"vite\"",
+    "client": "vite",
+    "server": "node server/index.js",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "test": "node tests/run.js && node tests/sim.js && node tests/player.js"
+  },
+  "dependencies": {
+    "@fontsource/pixelify-sans": "5.2.5",
+    "three": "0.170.0",
+    "ws": "8.18.0"
+  },
+  "devDependencies": {
+    "concurrently": "9.2.1",
+    "vite": "6.3.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
